@@ -1,60 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id" class="scroll-smooth font-serif">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Gielang || Portfolio</title>
+    <meta name="description" content="Web Portofolio Pribadi Gielang Fitrawan">
+    <title>Gielang Fitrawan || Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['"Times New Roman"', 'Times', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html, body {
+            font-family: "Times New Roman", Times, serif;
+        }
+    </style>
 </head>
-<body>
-    <header class="header">
-        <a href="#home" class="">Gielang</a>
-        <div class="navbar">
-            <a href="#about" class="">About</a>
-            <a href="#skills" class="">Skills</a>
-            <a href="#projects" class="">Projects</a>
-            <a href="#contact" class="">Contact</a>
+<body class="bg-[#f6f7f3] text-[#24312b] font-serif min-h-screen">
+    <header class="bg-white/95 backdrop-blur-sm border-b border-[#dfe5df] sticky top-0 z-50">
+        <div class="max-w-[960px] mx-auto flex justify-between items-center py-4 px-6">
+            <a href="#home" class="font-bold text-lg text-[#24312b] hover:text-[#376b55] transition-colors">Gielang</a>
+            <nav class="flex gap-6 text-[0.95rem] text-[#68736d]">
+                <a href="#about" class="hover:text-[#376b55] transition-colors">About</a>
+                <a href="#skills" class="hover:text-[#376b55] transition-colors">Skills</a>
+                <a href="#projects" class="hover:text-[#376b55] transition-colors">Projects</a>
+                <a href="#contact" class="hover:text-[#376b55] transition-colors">Contact</a>
+            </nav>
         </div>
     </header>
-<hr>
-    <section id="home">
-        <img src="assets/image.png" alt="Profile Picture" width="200" height="200" display="block" style="margin: 0 auto; border-radius: 50%; padding : 30px;">
-        <p>Computer Engineering Student</p>
-        <h1>Gielang Fitrawan</h1>
-        <p>Interested in Artificial Intelligence, Web Development, and Machine Learning</p>
-    </section>
-<hr>
-    <section id="about">
-        <p>A little about me</p>
-        <h2>About Me</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga in molestiae quasi reprehenderit itaque perferendis id, suscipit at explicabo veritatis quos corrupti illo quo sapiente totam neque fugiat provident odio.</p>
-    </section>
-<hr>
-    <section id="skills">
-        <p>What I work with</p>
-        <h2>Skills</h2>
-        <span class="skillslist">HTML</span>
-        <span class="skillslist">CSS</span>
-        <span class="skillslist">JavaScript</span>
-        <span class="skillslist">Python</span>
-    </section>
-<hr>
-    <section id="projects">
-        <p>Selected Works</p>
-        <h2>Projects</h2>
-        <h3>Hospital Database System</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, ipsa ex! Iure ad nemo quis vero a quidem saepe itaque nulla, aliquam, possimus qui. Dolorum magni nesciunt a cum illo.</p>
-        <h3>ESP32 Digital Check</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae totam minus ullam perferendis rerum saepe iusto, facere porro obcaecati rem quidem? Veniam dolorem sequi saepe illo, aliquid voluptas voluptates harum.</p>
-        <h3>Portfolio Website</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero placeat tenetur autem debitis maxime excepturi animi minus unde iste nesciunt qui nam consequuntur, fuga provident eos at atque facere quaerat!</p>
-    </section>
-<hr>
-    <section id="contact">
-        <p>Get in Touch</p>
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:gielangfitrawan@gmail.com" target="_blank" rel="noreferrer">gielangfitrawan@gmail.com</a></p>
-        <p>GitHub: <a href="https://github.com/Jsooonx" target="_blank" rel="noreferrer">https://github.com/Jsooonx</a></p>
-    </section>
+
+    <main class="max-w-[960px] mx-auto px-6">
+        <section id="home" class="py-12 sm:py-16 flex flex-col sm:flex-row items-center gap-8 sm:gap-10">
+            <img src="assets/image.png" alt="Profile Picture" class="w-40 h-40 sm:w-48 sm:h-48 rounded-full object-cover shrink-0 shadow-sm border-2 border-[#dfe5df]">
+            <div class="flex flex-col text-center sm:text-left">
+                <p class="text-xs font-bold tracking-[0.08em] text-[#376b55] uppercase mb-2">Computer Engineering Student</p>
+                <h1 class="text-3xl sm:text-[2.6rem] font-bold text-[#376b55] leading-tight mb-3">Gielang Fitrawan</h1>
+                <p class="text-base sm:text-lg text-[#68736d] leading-relaxed">Interested in Artificial Intelligence, Web Development, and Machine Learning</p>
+            </div>
+        </section>
+
+        <section id="about" class="border-t border-[#dfe5df] py-10 grid grid-cols-1 md:grid-cols-[220px_1fr] gap-6 md:gap-10 scroll-mt-16">
+            <div>
+                <p class="text-xs font-bold tracking-[0.08em] text-[#376b55] uppercase">A little about me</p>
+                <h2 class="text-2xl font-bold text-[#24312b] mt-1">About Me</h2>
+            </div>
+            <div class="text-[#24312b] leading-relaxed">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga in molestiae quasi reprehenderit itaque perferendis id, suscipit at explicabo veritatis quos corrupti illo quo sapiente totam neque fugiat provident odio.</p>
+            </div>
+        </section>
+
+        <section id="skills" class="border-t border-[#dfe5df] py-10 grid grid-cols-1 md:grid-cols-[220px_1fr] gap-6 md:gap-10 scroll-mt-16">
+            <div>
+                <p class="text-xs font-bold tracking-[0.08em] text-[#376b55] uppercase">What I work with</p>
+                <h2 class="text-2xl font-bold text-[#24312b] mt-1">Skills</h2>
+            </div>
+            <div class="flex flex-wrap gap-2.5 items-center">
+                <span class="px-3.5 py-1.5 bg-white border border-[#dfe5df] rounded text-[0.95rem] text-[#24312b] font-medium shadow-sm hover:border-[#376b55] hover:text-[#376b55] transition-colors">HTML</span>
+                <span class="px-3.5 py-1.5 bg-white border border-[#dfe5df] rounded text-[0.95rem] text-[#24312b] font-medium shadow-sm hover:border-[#376b55] hover:text-[#376b55] transition-colors">CSS</span>
+                <span class="px-3.5 py-1.5 bg-white border border-[#dfe5df] rounded text-[0.95rem] text-[#24312b] font-medium shadow-sm hover:border-[#376b55] hover:text-[#376b55] transition-colors">JavaScript</span>
+                <span class="px-3.5 py-1.5 bg-white border border-[#dfe5df] rounded text-[0.95rem] text-[#24312b] font-medium shadow-sm hover:border-[#376b55] hover:text-[#376b55] transition-colors">Python</span>
+            </div>
+        </section>
+
+        <section id="projects" class="border-t border-[#dfe5df] py-10 grid grid-cols-1 md:grid-cols-[220px_1fr] gap-6 md:gap-10 scroll-mt-16">
+            <div>
+                <p class="text-xs font-bold tracking-[0.08em] text-[#376b55] uppercase">Selected Works</p>
+                <h2 class="text-2xl font-bold text-[#24312b] mt-1">Projects</h2>
+            </div>
+            <div class="space-y-4">
+                <div class="bg-white p-5 rounded-lg border border-[#dfe5df] shadow-sm hover:border-[#376b55] transition-colors">
+                    <h3 class="text-lg font-bold text-[#24312b] mb-1.5">Hospital Database System</h3>
+                    <p class="text-[#68736d] text-sm leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, ipsa ex! Iure ad nemo quis vero a quidem saepe itaque nulla, aliquam, possimus qui. Dolorum magni nesciunt a cum illo.</p>
+                </div>
+                <div class="bg-white p-5 rounded-lg border border-[#dfe5df] shadow-sm hover:border-[#376b55] transition-colors">
+                    <h3 class="text-lg font-bold text-[#24312b] mb-1.5">ESP32 Digital Check</h3>
+                    <p class="text-[#68736d] text-sm leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae totam minus ullam perferendis rerum saepe iusto, facere porro obcaecati rem quidem? Veniam dolorem sequi saepe illo, aliquid voluptas voluptates harum.</p>
+                </div>
+                <div class="bg-white p-5 rounded-lg border border-[#dfe5df] shadow-sm hover:border-[#376b55] transition-colors">
+                    <h3 class="text-lg font-bold text-[#24312b] mb-1.5">Portfolio Website</h3>
+                    <p class="text-[#68736d] text-sm leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero placeat tenetur autem debitis maxime excepturi animi minus unde iste nesciunt qui nam consequuntur, fuga provident eos at atque facere quaerat!</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="border-t border-[#dfe5df] py-10 grid grid-cols-1 md:grid-cols-[220px_1fr] gap-6 md:gap-10 scroll-mt-16">
+            <div>
+                <p class="text-xs font-bold tracking-[0.08em] text-[#376b55] uppercase">Get in Touch</p>
+                <h2 class="text-2xl font-bold text-[#24312b] mt-1">Contact</h2>
+            </div>
+            <div class="space-y-3 text-base">
+                <p class="text-[#68736d]">
+                    <span class="font-semibold text-[#24312b]">Email:</span> 
+                    <a href="mailto:gielangfitrawan@gmail.com" target="_blank" rel="noreferrer" class="text-[#376b55] hover:underline underline-offset-4 transition-all">gielangfitrawan@gmail.com</a>
+                </p>
+                <p class="text-[#68736d]">
+                    <span class="font-semibold text-[#24312b]">GitHub:</span> 
+                    <a href="https://github.com/Jsooonx" target="_blank" rel="noreferrer" class="text-[#376b55] hover:underline underline-offset-4 transition-all">https://github.com/Jsooonx</a>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-t border-[#dfe5df] py-8 text-center text-sm text-[#68736d]">
+        <p>&copy; 2026 Gielang Fitrawan. All rights reserved.</p>
+    </footer>
 </body>
 </html>
