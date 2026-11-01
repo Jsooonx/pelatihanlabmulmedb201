@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Web Portofolio Pribadi M. Gielang Fitrawan">
+    <title>M. Gielang Fitrawan Mukhlish || Portfolio</title>
+
+    <!-- font google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['"Instrument Serif"', 'Georgia', 'serif'],
+                        sans: ['"Inter"', 'sans-serif'],
+                        mono: ['"JetBrains Mono"', 'monospace'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-[#090a0b] text-[#e4e4e7] font-sans min-h-screen flex flex-col">
+
+    <!-- navbar -->
+    <header class="bg-[#090a0b]/90 backdrop-blur-sm border-b border-neutral-800 sticky top-0 z-50">
+        <div class="max-w-5xl mx-auto flex justify-between items-center py-4 px-6">
+            <a href="#hero" class="flex items-center gap-2.5">
+                <img src="assets/profile.jpg" alt="Profile" class="w-8 h-8 rounded-full object-cover object-center border border-neutral-700">
+                <span class="font-medium text-sm text-white">Gielang Fitrawan</span>
+            </a>
+            <nav class="flex items-center gap-6 text-sm text-neutral-400">
+                <a href="#about" class="hover:text-white transition-colors hidden sm:inline-block">About</a>
+                <a href="#skills" class="hover:text-white transition-colors hidden sm:inline-block">Skills</a>
+                <a href="#projects" class="hover:text-white transition-colors">Projects</a>
+                <a href="mailto:gielangfitrawan@gmail.com" class="px-3.5 py-1 bg-white text-black font-medium rounded-full hover:bg-neutral-200 transition-colors">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <!-- hero section -->
+        <section id="hero" class="py-16 sm:py-24 max-w-5xl mx-auto px-6">
+            <h1 class="font-serif text-5xl sm:text-7xl font-normal text-white leading-tight mb-4">
+                Building software<br>
+                &amp; exploring AI
+            </h1>
+            <p class="text-base sm:text-lg text-neutral-400 leading-relaxed max-w-2xl mb-8">
+                Computer Engineering student at ITS Surabaya. Interested in Artificial Intelligence, Machine Learning, and Web Development. Exploring modern web frameworks, intelligent agents, and clean code.
+            </p>
+            <div class="flex items-center gap-3">
+                <a href="#projects" class="px-5 py-2.5 bg-white text-black text-sm font-medium rounded-full hover:bg-neutral-200 transition-colors">
+                    Explore Projects &rarr;
+                </a>
+                <a href="mailto:gielangfitrawan@gmail.com" class="px-5 py-2.5 border border-neutral-700 text-neutral-300 text-sm rounded-full hover:border-white hover:text-white transition-colors">
+                    Get In Touch
+                </a>
+            </div>
+        </section>
+
+        <!-- efek ascii wave & dock nav -->
+        <section class="relative border-y border-neutral-800 overflow-hidden h-72 sm:h-80 bg-[#08090a] flex items-center justify-center">
+            <canvas id="ascii-canvas" class="absolute inset-0 w-full h-full pointer-events-none"></canvas>
+            <div class="absolute inset-0 pointer-events-none bg-gradient-to-b from-[#090a0b] via-transparent to-[#090a0b]"></div>
+
+            <div class="relative z-10 flex flex-wrap gap-1.5 p-1.5 rounded-full bg-neutral-900/90 border border-neutral-700 backdrop-blur-sm text-xs font-mono text-neutral-400">
+                <a href="#about" class="px-3 py-1 rounded-full hover:text-white hover:bg-neutral-800 transition-colors">About</a>
+                <a href="#skills" class="px-3 py-1 rounded-full hover:text-white hover:bg-neutral-800 transition-colors">Skills</a>
+                <a href="#projects" class="px-3 py-1 rounded-full hover:text-white hover:bg-neutral-800 transition-colors">Projects</a>
+                <a href="#education" class="px-3 py-1 rounded-full hover:text-white hover:bg-neutral-800 transition-colors">Education</a>
+                <a href="mailto:gielangfitrawan@gmail.com" class="px-3 py-1 bg-white text-black font-semibold rounded-full hover:bg-neutral-200 transition-colors">Contact</a>
+            </div>
+        </section>
+
+        <!-- skills -->
+        <section id="skills" class="border-b border-neutral-800 py-10">
+            <div class="max-w-5xl mx-auto px-6">
+                <div class="flex justify-between items-center text-xs font-mono text-neutral-500 uppercase tracking-wider mb-6">
+                    <span>Technical Interests &amp; Skills</span>
+                    <span>Web &bull; AI &bull; Programming</span>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="p-5 bg-neutral-900/50 border border-neutral-800 rounded-lg">
+                        <p class="text-xs font-mono text-neutral-500 mb-2">01 / Web Development</p>
+                        <h3 class="font-semibold text-white">Next.js &amp; React</h3>
+                        <p class="text-xs text-neutral-400 mt-1">TypeScript, Tailwind CSS, Full-Stack</p>
+                    </div>
+                    <div class="p-5 bg-neutral-900/50 border border-neutral-800 rounded-lg">
+                        <p class="text-xs font-mono text-neutral-500 mb-2">02 / Programming</p>
+                        <h3 class="font-semibold text-white">C / C++ (C++17)</h3>
+                        <p class="text-xs text-neutral-400 mt-1">SFML, State Bitpacking, Algorithms</p>
+                    </div>
+                    <div class="p-5 bg-neutral-900/50 border border-neutral-800 rounded-lg">
+                        <p class="text-xs font-mono text-neutral-500 mb-2">03 / AI &amp; Workflows</p>
+                        <h3 class="font-semibold text-white">Python &amp; LLMs</h3>
+                        <p class="text-xs text-neutral-400 mt-1">Agentic AI Workflows, Gemini/OpenAI</p>
+                    </div>
+                    <div class="p-5 bg-neutral-900/50 border border-neutral-800 rounded-lg">
+                        <p class="text-xs font-mono text-neutral-500 mb-2">04 / Cloud &amp; Tools</p>
+                        <h3 class="font-semibold text-white">Cloudflare Workers</h3>
+                        <p class="text-xs text-neutral-400 mt-1">D1 SQLite, Git/GitHub, Linux/Bash</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- projects -->
+        <section id="projects" class="py-12 border-b border-neutral-800">
+            <div class="max-w-5xl mx-auto px-6">
+                <div class="mb-8">
+                    <p class="text-xs font-mono text-neutral-500 uppercase tracking-wider mb-1">Selected Works</p>
+                    <h2 class="font-serif text-3xl sm:text-4xl text-white">Featured Projects</h2>
+                </div>
+
+                <div class="space-y-6">
+                    <!-- scholarhub -->
+                    <div class="bg-neutral-900/40 p-6 sm:p-8 rounded-xl border border-neutral-800 hover:border-neutral-700 transition-colors">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4">
+                            <div>
+                                <div class="flex flex-wrap gap-2 mb-2">
+                                    <span class="px-2 py-0.5 bg-neutral-800 text-[11px] font-mono rounded text-neutral-300">Next.js 16</span>
+                                    <span class="px-2 py-0.5 bg-neutral-800 text-[11px] font-mono rounded text-neutral-300">TypeScript</span>
+                                    <span class="px-2 py-0.5 bg-neutral-800 text-[11px] font-mono rounded text-neutral-300">Cloudflare D1</span>
+                                    <span class="px-2 py-0.5 bg-neutral-800 text-[11px] font-mono rounded text-neutral-300">Tailwind CSS</span>
+                                </div>
+                                <h3 class="font-serif text-2xl sm:text-3xl text-white">ScholarHub</h3>
+                                <p class="text-xs text-neutral-400 mt-0.5">Full-Stack Scholarship Platform &amp; Tracker</p>
+                            </div>
+                            <a href="https://scholarhubs.my.id" target="_blank" rel="noreferrer" class="self-start sm:self-auto px-3.5 py-1.5 bg-white text-black text-xs font-medium rounded-full hover:bg-neutral-200 transition-colors">
+                                Live Demo &nearr;
+                            </a>
+                        </div>
+                        <p class="text-sm text-neutral-400 leading-relaxed mb-4">
+                            Architected a full-stack scholarship platform indexing 245+ global programs across 33 countries. Built with Next.js SSG across 295 pages for sub-second load times, interactive Kanban Application Tracker, and automated data pipelines using Agentic AI workflows.
+                        </p>
+                        <div class="grid grid-cols-3 gap-3 pt-4 border-t border-neutral-800 text-xs font-mono">
+                            <div>
+                                <span class="text-neutral-500 block">Scale:</span>
+                                <span class="text-white">245+ Programs</span>
+                            </div>
+                            <div>
+                                <span class="text-neutral-500 block">Database:</span>
+                                <span class="text-white">Cloudflare D1</span>
+                            </div>
+                            <div>
+                                <span class="text-neutral-500 block">Performance:</span>
+                                <span class="text-white">Sub-second SSG</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- sokoban -->
+                    <div class="bg-neutral-900/40 p-6 sm:p-8 rounded-xl border border-neutral-800 hover:border-neutral-700 transition-colors">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4">
+                            <div>
+                                <div class="flex flex-wrap gap-2 mb-2">
+                                    <span class="px-2 py-0.5 bg-neutral-800 text-[11px] font-mono rounded text-neutral-300">C++17</span>
+                                    <span class="px-2 py-0.5 bg-neutral-800 text-[11px] font-mono rounded text-neutral-300">SFML</span>
+                                    <span class="px-2 py-0.5 bg-neutral-800 text-[11px] font-mono rounded text-neutral-300">Algorithms</span>
+                                </div>
+                                <h3 class="font-serif text-2xl sm:text-3xl text-white">Sokoban Puzzle Engine &amp; Solver</h3>
+                                <p class="text-xs text-neutral-400 mt-0.5">Final Project in Advanced Programming Coursework</p>
+                            </div>
+                            <a href="https://github.com/Jsooonx" target="_blank" rel="noreferrer" class="self-start sm:self-auto px-3.5 py-1.5 border border-neutral-700 text-neutral-300 text-xs font-medium rounded-full hover:border-white hover:text-white transition-colors">
+                                Source Code &nearr;
+                            </a>
+                        </div>
+                        <p class="text-sm text-neutral-400 leading-relaxed mb-4">
+                            Developed a 2D puzzle game engine using C++17 and SFML with custom collision physics, 50-move undo history stack, and state machine gameplay. Built an automated BFS solver using 64-bit state bitpacking to calculate optimal paths in sub-seconds.
+                        </p>
+                        <div class="grid grid-cols-3 gap-3 pt-4 border-t border-neutral-800 text-xs font-mono">
+                            <div>
+                                <span class="text-neutral-500 block">Algorithm:</span>
+                                <span class="text-white">State Bitpacking</span>
+                            </div>
+                            <div>
+                                <span class="text-neutral-500 block">Graphics:</span>
+                                <span class="text-white">SFML (C++17)</span>
+                            </div>
+                            <div>
+                                <span class="text-neutral-800 block">Architecture:</span>
+                                <span class="text-white">Modular OOP</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- about me -->
+        <section id="about" class="py-12 border-b border-neutral-800">
+            <div class="max-w-5xl mx-auto px-6 grid grid-cols-1 md:grid-cols-[220px_1fr] gap-8">
+                <div class="flex flex-col items-center md:items-start text-center md:text-left">
+                    <img src="assets/profile.jpg" alt="Profile" class="w-36 h-36 rounded-full object-cover object-center border-2 border-neutral-700 mb-3 grayscale hover:grayscale-0 transition-all duration-300">
+                    <h3 class="font-serif text-xl text-white">Gielang Fitrawan</h3>
+                    <p class="text-xs font-mono text-neutral-500">Surabaya, Indonesia</p>
+                </div>
+
+                <div class="space-y-6">
+                    <div>
+                        <p class="text-xs font-mono text-neutral-500 uppercase tracking-wider mb-1">About Me</p>
+                        <h2 class="font-serif text-3xl text-white mb-3">Building ideas into software</h2>
+                        <p class="text-sm text-neutral-400 leading-relaxed">
+                            I am an undergraduate Computer Engineering student at Institut Teknologi Sepuluh Nopember (ITS) Surabaya. I have a strong interest in Artificial Intelligence, Machine Learning, and Web Development—enjoying the process of crafting intuitive interfaces, agentic AI workflows, and practical digital solutions.
+                        </p>
+                    </div>
+
+                    <div id="education" class="p-5 rounded-lg bg-neutral-900/50 border border-neutral-800">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
+                            <h4 class="text-sm font-semibold text-white">Institut Teknologi Sepuluh Nopember (ITS)</h4>
+                            <span class="text-xs font-mono text-neutral-300">GPA: 3.47 / 4.00</span>
+                        </div>
+                        <p class="text-xs text-neutral-400 mb-2">Bachelor of Engineering in Computer Engineering (Currently 3rd Semester)</p>
+                        <p class="text-xs font-mono text-neutral-500">
+                            Coursework: Advanced Programming, Discrete Mathematics, Basic Programming.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="py-10 text-xs font-mono text-neutral-500 border-t border-neutral-800">
+        <div class="max-w-5xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p>&copy; 2026 M. Gielang Fitrawan. All rights reserved.</p>
+            <div class="flex gap-6 text-neutral-400">
+                <a href="https://github.com/Jsooonx" target="_blank" rel="noreferrer" class="hover:text-white transition-colors">GitHub &nearr;</a>
+                <a href="mailto:gielangfitrawan@gmail.com" class="hover:text-white transition-colors">Email &nearr;</a>
+                <a href="https://gielangporto.jsooonx.my.id/" target="_blank" rel="noreferrer" class="hover:text-white transition-colors">Website &nearr;</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- script canvas wave -->
+    <script>
+        (function initAsciiWave() {
+            const canvas = document.getElementById('ascii-canvas');
+            if (!canvas) return;
+            const ctx = canvas.getContext('2d', { alpha: true });
+            if (!ctx) return;
+
+            const config = {
+                cellWidth: 12,
+                cellHeight: 14,
+                fontSize: 11,
+                terrainScale: 0.11,
+                contourSpacing: 0.08,
+                speed: 0.65,
+            };
+
+            const charLevels = [
+                { min: 15, char: '·', color: 'rgba(255, 255, 255, 0.08)' },
+                { min: 50, char: '/', color: 'rgba(255, 255, 255, 0.20)' },
+                { min: 100, char: '$', color: 'rgba(255, 255, 255, 0.45)' },
+                { min: 155, char: '£', color: 'rgba(255, 255, 255, 0.85)' }
+            ];
+
+            function getCharIndex(val) {
+                for (let i = charLevels.length - 1; i >= 0; i--) {
+                    if (val >= charLevels[i].min) return i;
+                }
+                return -1;
+            }
+
+            function noise(x, y, t) {
+                let a = 0;
+                a += Math.sin(0.8 * x + 0.3 * t) * Math.cos(0.6 * y + 0.2 * t) * 0.5;
+                a += 0.25 * Math.sin(1.6 * x + 1.2 * y + 0.15 * t);
+                a += Math.sin(0.3 * x - 0.4 * t) * Math.cos(0.4 * y + 0.25 * t) * 0.6;
+                a += 0.3 * Math.sin(0.5 * (x + y) + 0.35 * t);
+                a += Math.sin(2.5 * x + 0.1 * t) * Math.cos(2.8 * y - 0.12 * t) * 0.15;
+                return a;
+            }
+
+            function sample(x, y, t, spacing) {
+                let n = noise(x, y, t);
+                n += 0.4 * noise(2.2 * x, 2.2 * y, 0.7 * t);
+                n += 0.15 * noise(4.5 * x, 4.5 * y, 0.4 * t);
+                let r = (n + 1.8) / 3.6;
+                r = Math.max(0, Math.min(1, r));
+
+                let s = (r % spacing) / spacing;
+                let isRidge = s < 0.12 || s > 0.88;
+                let c = isRidge ? Math.round(200 * r + 55) : Math.round(140 * r);
+
+                if (isRidge) {
+                    let dx = noise(x + 0.01, y, t) - noise(x - 0.01, y, t);
+                    let dy = noise(x, y + 0.01, t) - noise(x, y - 0.01, t);
+                    let grad = 12 * Math.sqrt(dx * dx + dy * dy);
+                    if (grad > 0.5) c = Math.min(255, c + Math.round(40 * grad));
+                }
+                return c;
+            }
+
+            let width = 0, height = 0;
+            const dpr = Math.min(window.devicePixelRatio || 1, 2);
+
+            function resize() {
+                const rect = canvas.parentElement.getBoundingClientRect();
+                width = rect.width;
+                height = rect.height;
+                canvas.width = Math.floor(width * dpr);
+                canvas.height = Math.floor(height * dpr);
+                ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+            }
+
+            window.addEventListener('resize', resize);
+            resize();
+
+            let startTime = performance.now();
+            let animationFrameId;
+
+            function render(now) {
+                const t = ((now - startTime) / 1000) * config.speed;
+                const cols = Math.ceil(width / config.cellWidth) + 1;
+                const rows = Math.ceil(height / config.cellHeight) + 1;
+
+                ctx.clearRect(0, 0, width, height);
+                ctx.font = `${config.fontSize}px "JetBrains Mono", monospace`;
+                ctx.textAlign = 'center';
+                ctx.textBaseline = 'middle';
+
+                const buckets = charLevels.map(() => []);
+
+                for (let row = 0; row < rows; row++) {
+                    const ySample = (row + 0.5) * config.terrainScale;
+                    for (let col = 0; col < cols; col++) {
+                        const xSample = (col + 0.5) * config.terrainScale;
+                        const val = sample(xSample, ySample, t, config.contourSpacing);
+                        const idx = getCharIndex(val);
+                        if (idx >= 0) {
+                            buckets[idx].push(col * config.cellWidth + config.cellWidth / 2, row * config.cellHeight + config.cellHeight / 2);
+                        }
+                    }
+                }
+
+                for (let i = 0; i < charLevels.length; i++) {
+                    const coords = buckets[i];
+                    if (coords.length === 0) continue;
+                    ctx.fillStyle = charLevels[i].color;
+                    for (let j = 0; j < coords.length; j += 2) {
+                        ctx.fillText(charLevels[i].char, coords[j], coords[j + 1]);
+                    }
+                }
+
+                animationFrameId = requestAnimationFrame(render);
+            }
+
+            animationFrameId = requestAnimationFrame(render);
+        })();
+    </script>
+</body>
+</html>
