@@ -6,25 +6,12 @@
     <meta name="description" content="Web Portofolio Pribadi M. Gielang Fitrawan">
     <title>M. Gielang Fitrawan Mukhlish | Portfolio</title>
 
-    <!-- font google -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        serif: ['"Instrument Serif"', 'Georgia', 'serif'],
-                        sans: ['"Inter"', 'sans-serif'],
-                        mono: ['"JetBrains Mono"', 'monospace'],
-                    }
-                }
-            }
+    <style>
+        .font-serif {
+            font-family: "Times New Roman", Times, serif;
         }
-    </script>
+    </style>
 </head>
 <body class="bg-[#090a0b] text-[#e4e4e7] font-sans min-h-screen flex flex-col">
 
@@ -33,11 +20,11 @@
         <div class="max-w-5xl mx-auto flex justify-between items-center py-4 px-6">
             <a href="#hero" class="flex items-center gap-2.5">
                 <img src="assets/profile.jpg" alt="Profile" class="w-8 h-8 rounded-full object-cover object-center border border-neutral-700">
-                <span class="font-medium text-sm text-white">Gielang Fitrawan</span>
+                <span class="font-medium text-sm text-white">M. Gielang Fitrawan Mukhlish</span>
             </a>
             <nav class="flex items-center gap-6 text-sm text-neutral-400">
-                <a href="#about" class="hover:text-white transition-colors hidden sm:inline-block">About</a>
-                <a href="#skills" class="hover:text-white transition-colors hidden sm:inline-block">Skills</a>
+                <a href="#about" class="hover:text-white transition-colors">About</a>
+                <a href="#skills" class="hover:text-white transition-colors">Skills</a>
                 <a href="#projects" class="hover:text-white transition-colors">Projects</a>
                 <a href="mailto:gielangfitrawan@gmail.com" class="px-3.5 py-1 bg-white text-black font-medium rounded-full hover:bg-neutral-200 transition-colors">Contact</a>
             </nav>
@@ -46,12 +33,12 @@
 
     <main class="flex-grow">
         <!-- hero section -->
-        <section id="hero" class="py-16 sm:py-24 max-w-5xl mx-auto px-6 border-b border-neutral-800">
-            <h1 class="font-serif text-5xl sm:text-7xl font-normal text-white leading-tight mb-4">
+        <section id="hero" class="py-20 max-w-5xl mx-auto px-6 border-b border-neutral-800">
+            <h1 class="font-serif text-7xl font-normal text-white leading-tight mb-4">
                 M. Gielang<br>
                 Fitrawan Mukhlish
             </h1>
-            <p class="text-base sm:text-lg text-neutral-400 leading-relaxed max-w-2xl mb-8">
+            <p class="text-lg text-neutral-400 leading-relaxed max-w-2xl mb-8">
                 Computer Engineering student at ITS Surabaya. Interested in Artificial Intelligence, Machine Learning, and Web Development. Exploring modern web frameworks, and intelligent agents.
             </p>
             <div class="flex items-center gap-3">
@@ -71,7 +58,7 @@
                     <span>Technical Interests &amp; Skills</span>
                     <span>Web &bull; AI &bull; Programming</span>
                 </div>
-                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="grid grid-cols-4 gap-4">
                     <div class="p-5 bg-neutral-900/50 border border-neutral-800 rounded-lg">
                         <p class="text-xs font-mono text-neutral-500 mb-2">01 / Web Development</p>
                         <h3 class="font-semibold text-white">HTML, CSS &amp; Tailwind</h3>
@@ -101,43 +88,29 @@
             <div class="max-w-5xl mx-auto px-6">
                 <div class="mb-8">
                     <p class="text-xs font-mono text-neutral-500 uppercase tracking-wider mb-1">Selected Works</p>
-                    <h2 class="font-serif text-3xl sm:text-4xl text-white">Featured Projects</h2>
+                    <h2 class="font-serif text-4xl text-white">Featured Projects</h2>
                 </div>
 
                 <div class="space-y-6">
                     <!-- sokoban -->
-                    <div class="bg-neutral-900/40 p-6 sm:p-8 rounded-xl border border-neutral-800 hover:border-neutral-700 transition-colors">
-                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4">
+                    <div class="bg-neutral-900/40 p-8 rounded-xl border border-neutral-800 hover:border-neutral-700 transition-colors">
+                        <div class="flex justify-between items-center gap-3 mb-4">
                             <div>
                                 <div class="flex flex-wrap gap-2 mb-2">
                                     <span class="px-2 py-0.5 bg-neutral-800 text-[11px] font-mono rounded text-neutral-300">C++17</span>
                                     <span class="px-2 py-0.5 bg-neutral-800 text-[11px] font-mono rounded text-neutral-300">SFML</span>
                                     <span class="px-2 py-0.5 bg-neutral-800 text-[11px] font-mono rounded text-neutral-300">Algorithms</span>
                                 </div>
-                                <h3 class="font-serif text-2xl sm:text-3xl text-white">Sokoban Puzzle Engine &amp; Solver</h3>
+                                <h3 class="font-serif text-3xl text-white">Sokoban Puzzle Engine &amp; Solver</h3>
                                 <p class="text-xs text-neutral-400 mt-0.5">Final Project in Advanced Programming Coursework</p>
                             </div>
-                            <a href="https://github.com/Jsooonx" target="_blank" rel="noreferrer" class="self-start sm:self-auto px-3.5 py-1.5 border border-neutral-700 text-neutral-300 text-xs font-medium rounded-full hover:border-white hover:text-white transition-colors">
+                            <a href="https://github.com/Jsooonx" target="_blank" rel="noreferrer" class="px-3.5 py-1.5 border border-neutral-700 text-neutral-300 text-xs font-medium rounded-full hover:border-white hover:text-white transition-colors">
                                 Source Code
                             </a>
                         </div>
-                        <p class="text-sm text-neutral-400 leading-relaxed mb-4">
+                        <p class="text-sm text-neutral-400 leading-relaxed">
                             Developed a 2D puzzle game engine using C++17 and SFML with custom collision physics, 50-move undo history stack, and state machine gameplay. Built an automated BFS solver using 64-bit state bitpacking to calculate optimal paths in sub-seconds.
                         </p>
-                        <div class="grid grid-cols-3 gap-3 pt-4 border-t border-neutral-800 text-xs font-mono">
-                            <div>
-                                <span class="text-neutral-500 block">Algorithm:</span>
-                                <span class="text-white">State Bitpacking</span>
-                            </div>
-                            <div>
-                                <span class="text-neutral-500 block">Graphics:</span>
-                                <span class="text-white">SFML (C++17)</span>
-                            </div>
-                            <div>
-                                <span class="text-neutral-500 block">Architecture:</span>
-                                <span class="text-white">Modular OOP</span>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -145,8 +118,8 @@
 
         <!-- about me -->
         <section id="about" class="py-12 border-b border-neutral-800">
-            <div class="max-w-5xl mx-auto px-6 grid grid-cols-1 md:grid-cols-[220px_1fr] gap-8">
-                <div class="flex flex-col items-center md:items-start text-center md:text-left">
+            <div class="max-w-5xl mx-auto px-6 grid grid-cols-[220px_1fr] gap-8">
+                <div class="flex flex-col items-start text-left">
                     <img src="assets/profile.jpg" alt="Profile" class="w-36 h-36 rounded-full object-cover object-center border-2 border-neutral-700 mb-3 grayscale hover:grayscale-0 transition-all duration-300">
                     <h3 class="font-serif text-xl text-white">Gielang Fitrawan</h3>
                     <p class="text-xs font-mono text-neutral-500">Surabaya, Indonesia</p>
@@ -155,14 +128,13 @@
                 <div class="space-y-6">
                     <div>
                         <p class="text-xs font-mono text-neutral-500 uppercase tracking-wider mb-1">About Me</p>
-                        <h2 class="font-serif text-3xl text-white mb-3">Building ideas into software</h2>
                         <p class="text-sm text-neutral-400 leading-relaxed">
                             I am an undergraduate Computer Engineering student at Institut Teknologi Sepuluh Nopember (ITS) Surabaya. I have a strong interest in Artificial Intelligence, Machine Learning, and Web Development, enjoying the process of crafting intuitive interfaces, agentic AI workflows, and practical digital solutions.
                         </p>
                     </div>
 
                     <div id="education" class="p-5 rounded-lg bg-neutral-900/50 border border-neutral-800">
-                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
+                        <div class="flex justify-between items-center gap-1 mb-2">
                             <h4 class="text-sm font-semibold text-white">Institut Teknologi Sepuluh Nopember (ITS)</h4>
                             <span class="text-xs font-mono text-neutral-300">GPA: 3.47 / 4.00</span>
                         </div>
@@ -178,7 +150,7 @@
 
     <!-- footer -->
     <footer class="py-10 text-xs font-mono text-neutral-500 border-t border-neutral-800">
-        <div class="max-w-5xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div class="max-w-5xl mx-auto px-6 flex justify-between items-center gap-4">
             <p>&copy; 2026 M. Gielang Fitrawan. All rights reserved.</p>
             <div class="flex gap-6 text-neutral-400">
                 <a href="https://github.com/Jsooonx" target="_blank" rel="noreferrer" class="hover:text-white transition-colors">GitHub</a>
